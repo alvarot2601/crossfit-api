@@ -1,6 +1,7 @@
 // In src/services/workoutServices.js
 const { v4: uuid } = require("uuid");
-const Workout = require("../database/workout");
+const Workout = require("../database/Workout");
+
 
 const getAllWorkouts = () => {
   try {
