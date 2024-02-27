@@ -2,7 +2,7 @@ const workoutServices = require("../services/workoutServices.js");
 // In src/controllers/workoutController.js
 const getAllWorkouts = (req, res) => {
     const allWorkouts = workoutServices.getAllWorkouts();
-    res.send("Get all workouts");
+    res.send({status: 'OK', data: allWorkouts});
   };
   
   const getOneWorkout = (req, res) => {
@@ -32,3 +32,5 @@ const getAllWorkouts = (req, res) => {
     updateOneWorkout,
     deleteOneWorkout,
   };
+
+  925288484
